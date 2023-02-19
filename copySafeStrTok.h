@@ -10,7 +10,7 @@
 #define NULL 0
 
 char* my_strtok(char* str, const char* delim) {
-    // us static thread_local char* to be thread safe
+    // use static thread_local char* to be thread safe
     static char* p = NULL;
     if (str != NULL) {
         p = str;
